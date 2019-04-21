@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="profesiones">
+        <item>Abogado</item>
+        <item>Almacenista</item>
+        <item>Biólogo</item>
+        <item>Cirujano</item>
+        <item>Ingeniero</item>
+        <item>Profesor</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WebService</string>
+    <string name="DNI">DNI</string>
+    <string name="M">M</string>
+    <string name="F">F</string>
+    <string name="genero">Género</string>
+    <string name="email">Email</string>
+    <string name="pais">País</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="profesion">Profesión</string>
+    <string name="titulo">Creación de usuarios</string>
+    <string name="nombre">Nombre</string>
+    <string name="error_network_timeout">Tiempo excedido</string>
+</resources>

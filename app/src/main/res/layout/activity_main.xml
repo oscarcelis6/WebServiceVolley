@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edtId"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:hint="@string/DNI"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="12sp"
+        android:maxLength="15"
+       />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtNombre"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+            android:textSize="12sp"
+            android:paddingLeft="20dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp">
+
+     <TextView
+         android:layout_marginTop="16dp"
+         android:text="@string/genero"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:padding="8dp"
+                android:id="@+id/radioButM"
+                android:text="@string/M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:padding="8dp"
+                android:id="@+id/radioButF"
+                android:text="@string/F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/genero"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="@string/profesion" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_gravity="center"
+            android:id="@+id/edtProfesion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/profesion" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:textSize="12sp"
+            android:paddingLeft="12sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/edtCiudad"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/ciudad"
+            android:textSize="12sp"
+            android:paddingLeft="12sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+    <Button
+        android:background="@drawable/design_button"
+        android:textColor="#030202"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btnGuardarRegistro"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar datos" />
+
+
+    <TextView
+        android:id="@+id/txtErrror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
